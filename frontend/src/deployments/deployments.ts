@@ -10,6 +10,7 @@ export enum ContractIds {
   Greeter = 'greeter',
   FungibleTokenA = 'fungibleTokenA',
   FungibleTokenB = 'fungibleTokenB',
+  ETF = 'etf',
 }
 
 export const getDeployments = async (): Promise<SubstrateDeployment[]> => {

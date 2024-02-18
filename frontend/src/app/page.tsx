@@ -9,6 +9,7 @@ import { toast } from 'react-hot-toast'
 import { HomePageTitle } from '@/app/components/home-page-title'
 import { ChainInfo } from '@/components/web3/chain-info'
 import { ConnectButton } from '@/components/web3/connect-button'
+import { ETFInteraction } from '@/components/web3/etf-interactions'
 import { FungibleTokenInteraction } from '@/components/web3/fungible-token-interactions'
 
 export default function HomePage() {
@@ -31,13 +32,16 @@ export default function HomePage() {
         <div className="mt-12 flex w-full flex-wrap items-start justify-center gap-4">
           {/* Chain Metadata Information */}
           <ChainInfo />
-
           {/* Greeter Read/Write Contract Interactions */}
           {/* <GreeterContractInteractions /> */}
-
           {/* Fungible Token Interactions */}
           <FungibleTokenInteraction contractId={ContractIds.FungibleTokenA} />
           <FungibleTokenInteraction contractId={ContractIds.FungibleTokenB} />
+          <br></br>
+        </div>
+        <div className="mt-12 flex w-full flex-wrap items-start justify-center gap-4">
+          {/* ETF Read/Write Contract Interactions */}
+          <ETFInteraction />
         </div>
       </div>
     </>
