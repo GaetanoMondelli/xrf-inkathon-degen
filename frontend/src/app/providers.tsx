@@ -10,7 +10,7 @@ import { env } from '@/config/environment'
 export default function ClientProviders({ children }: PropsWithChildren) {
   return (
     <UseInkathonProvider
-      appName="ink!athon" // TODO
+      appName="XTF-0" // TODO
       connectOnInit={true}
       defaultChain={env.defaultChain}
       deployments={getDeployments()}

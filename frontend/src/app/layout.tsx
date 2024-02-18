@@ -19,15 +19,15 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'ink!athon Boilerplate',
-  description: 'Full-Stack DApp Boilerplate for ink! Smart Contracts',
+  title: 'XTF-0 Boilerplate',
+  description: 'ALPEH ZERO - ETF DAPP FOR DEGEN HACKATHON',
   metadataBase: new URL(env.url),
   robots: env.isProduction ? 'all' : 'noindex,nofollow',
   openGraph: {
     type: 'website',
     locale: 'en',
     url: env.url,
-    siteName: 'ink!athon Boilerplate',
+    siteName: 'XTF-0 Boilerplate',
     images: [
       {
         url: '/images/inkathon-og-banner.jpg',

@@ -2,13 +2,14 @@
 
 import { useEffect } from 'react'
 
+import { ContractIds } from '@/deployments/deployments'
 import { useInkathon } from '@scio-labs/use-inkathon'
 import { toast } from 'react-hot-toast'
 
 import { HomePageTitle } from '@/app/components/home-page-title'
 import { ChainInfo } from '@/components/web3/chain-info'
 import { ConnectButton } from '@/components/web3/connect-button'
-import { GreeterContractInteractions } from '@/components/web3/greeter-contract-interactions'
+import { FungibleTokenInteraction } from '@/components/web3/fungible-token-interactions'
 
 export default function HomePage() {
   // Display `useInkathon` error messages (optional)
@@ -32,7 +33,11 @@ export default function HomePage() {
           <ChainInfo />
 
           {/* Greeter Read/Write Contract Interactions */}
-          <GreeterContractInteractions />
+          {/* <GreeterContractInteractions /> */}
+
+          {/* Fungible Token Interactions */}
+          <FungibleTokenInteraction contractId={ContractIds.FungibleTokenA} />
+          <FungibleTokenInteraction contractId={ContractIds.FungibleTokenB} />
         </div>
       </div>
     </>

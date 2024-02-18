@@ -5,7 +5,7 @@
 Our ink! developer tooling initiative is made up of the following projects:
 
 - `create-ink-app` CLI (_Coming soon_)
-- [`ink!athon`](https://github.com/scio-labs/inkathon) Boilerplate
+- [`XTF-0`](https://github.com/scio-labs/inkathon) Boilerplate
 - [`useInkathon`](https://github.com/scio-labs/use-inkathon) Hooks & Utility Library
 - [`zink!`](https://github.com/scio-labs/zink) Smart Contract Macros
 

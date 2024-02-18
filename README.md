@@ -1,6 +1,6 @@
 ![inkathon Devtooling Banner](inkathon-devtooling-banner.png)
 
-# ink!athon Boilerplate
+# XTF-0 Boilerplate
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Built with ink!](https://raw.githubusercontent.com/paritytech/ink/master/.images/badge.svg)](https://use.ink)
@@ -8,14 +8,14 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-000000?logo=typescript&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
 
-This is a full-stack dApp boilerplate for ink! smart contracts with an integrated frontend. It can be used to quickly start developing your hackathon idea or to scaffold a production-ready Web3 application.
+This is a ALPEH ZERO - ETF DAPP FOR DEGEN HACKATHON with an integrated frontend. It can be used to quickly start developing your hackathon idea or to scaffold a production-ready Web3 application.
 
 The project is part of a [Scio Labs](https://scio.xyz) initiative to improve the developer experience in the ink! ecosystem and a proud member of the [Aleph Zero EFP](https://alephzero.org/ecosystem-funding-program). 💜
 
 Other projects include:
 
 - `create-ink-app` CLI (_Coming soon_)
-- [`ink!athon`](https://github.com/scio-labs/inkathon) Boilerplate
+- [`XTF-0`](https://github.com/scio-labs/inkathon) Boilerplate
 - [`useInkathon`](https://github.com/scio-labs/use-inkathon) Hooks & Utility Library
 - [`zink!`](https://github.com/scio-labs/zink) Smart Contract Macros
 
@@ -274,7 +274,7 @@ As an alternative, [yarn](https://yarnpkg.com/) is also supported and can be use
 - The `pnpm` CLI is still used in many `package.json` scripts, so these would have to be adjusted manually.
 
 > [!IMPORTANT]  
-> As [npm](https://www.npmjs.com/) lacks support for the `workspace` import protocol, it's not compatible with ink!athon.
+> As [npm](https://www.npmjs.com/) lacks support for the `workspace` import protocol, it's not compatible with XTF-0.
 
 </details>
 
@@ -320,7 +320,7 @@ They are stored under `contracts/typed-contracts/` and imported directly from th
 - [polkadot.js Documentation](https://polkadot.js.org/docs/)
 - [Polkadot Wiki ink! Tools](https://wiki.polkadot.network/docs/build-open-source)
 - [Aleph Zero Documentation](https://docs.alephzero.org/aleph-zero/build/)
-- [ink!athon Workshop Recording](https://youtube.com/watch?v=DA1pLk5--GE)
-- [ink!athon Telegram Group](https://t.me/inkathon)
+- [XTF-0 Workshop Recording](https://youtube.com/watch?v=DA1pLk5--GE)
+- [XTF-0 Telegram Group](https://t.me/inkathon)
 
 </details>

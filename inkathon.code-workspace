@@ -1,22 +1,22 @@
 {
   "folders": [
     {
-      "name": "Project Root",
-      "path": "./"
+      "name": "XTF - WEB3 ETF",
+      "path": "./",
     },
     {
       "name": "Frontend",
-      "path": "./frontend"
+      "path": "./frontend",
     },
     {
       "name": "Contracts",
-      "path": "./contracts"
-    }
+      "path": "./contracts",
+    },
   ],
   "settings": {
     "files.associations": {
       ".env.*": "dotenv",
-      "*.css": "tailwindcss"
+      "*.css": "tailwindcss",
     },
     "peacock.color": "#8758FF",
     "workbench.colorCustomizations": {
@@ -25,7 +25,7 @@
       "statusBar.foreground": "#e7e7e7",
       "statusBarItem.hoverBackground": "#ac8bff",
       "statusBarItem.remoteBackground": "#8758ff",
-      "statusBarItem.remoteForeground": "#e7e7e7"
-    }
-  }
+      "statusBarItem.remoteForeground": "#e7e7e7",
+    },
+  },
 }

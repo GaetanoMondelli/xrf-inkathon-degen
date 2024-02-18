@@ -2,9 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { AnchorHTMLAttributes, FC } from 'react'
 
-import githubIcon from 'public/icons/github-button.svg'
-import telegramIcon from 'public/icons/telegram-button.svg'
-import vercelIcon from 'public/icons/vercel-button.svg'
 import inkathonLogo from 'public/images/inkathon-logo.png'
 
 import { cn } from '@/utils/cn'
@@ -27,8 +24,8 @@ const StyledIconLink: React.FC<StyledIconLinkProps> = ({ className, children, ..
 )
 
 export const HomePageTitle: FC = () => {
-  const title = 'ink!athon'
-  const desc = 'Full-Stack DApp Boilerplate for ink! Smart Contracts'
+  const title = 'XTF-0'
+  const desc = 'ALPEH ZERO - ETF DAPP FOR DEGEN HACKATHON'
   const githubHref = 'https://github.com/scio-labs/inkathon'
   const deployHref = 'https://github.com/scio-labs/inkathon#deployment-'
   const telegramHref = 'https://t.me/inkathon'
@@ -43,7 +40,7 @@ export const HomePageTitle: FC = () => {
           // className="group"
           className="group flex cursor-pointer items-center gap-4 rounded-3xl px-3.5 py-1.5 transition-all hover:bg-gray-900"
         >
-          <Image src={inkathonLogo} priority width={60} alt="ink!athon Logo" />
+          <Image src={inkathonLogo} priority width={60} alt="XTF-0 Logo" />
           <h1 className="text-[2.5rem] font-black tracking-tighter">{title}</h1>
         </Link>
 
@@ -56,39 +53,18 @@ export const HomePageTitle: FC = () => {
             target="_blank"
             className="font-semibold text-gray-600 hover:text-gray-300"
           >
-            Dennis Zoma
+            Gaetano M.
           </a>{' '}
-          &{' '}
-          <a
-            href="https://scio.xyz"
-            target="_blank"
-            className="font-semibold text-gray-600 hover:text-gray-300"
-          >
-            Scio Labs
-          </a>
           . Supported by{' '}
           <a
             href="https://alephzero.org"
             target="_blank"
             className="font-semibold text-gray-600 hover:text-gray-300"
           >
-            Aleph Zero
+            XTF
           </a>
           .
         </p>
-
-        {/* Github & Vercel Buttons */}
-        <div className="flex select-none space-x-2">
-          <StyledIconLink href={githubHref} target="_blank">
-            <Image src={githubIcon} priority height={32} alt="Github Repository" />
-          </StyledIconLink>
-          <StyledIconLink href={deployHref} target="_blank">
-            <Image src={vercelIcon} priority height={32} alt="Deploy with Vercel" />
-          </StyledIconLink>
-          <StyledIconLink href={telegramHref} target="_blank">
-            <Image src={telegramIcon} priority height={32} alt="Telegram Group" />
-          </StyledIconLink>
-        </div>
 
         <div className="my-14 h-[1px] w-[5rem] max-w-full bg-gray-800" />
       </div>
