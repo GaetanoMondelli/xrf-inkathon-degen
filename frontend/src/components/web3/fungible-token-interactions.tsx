@@ -117,6 +117,8 @@ export const FungibleTokenInteraction: FC<FungibleTokenInteractionProps> = ({ co
                 </FormControl>
               </FormItem>
 
+              <br />
+
               <FormItem>
                 <FormLabel className="text-base">User Balance</FormLabel>
                 <FormControl>
