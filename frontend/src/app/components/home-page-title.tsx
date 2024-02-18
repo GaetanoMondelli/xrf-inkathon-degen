@@ -2,7 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { AnchorHTMLAttributes, FC } from 'react'
 
-import inkathonLogo from 'public/images/inkathon-logo.png'
+import inkathonLogo from 'public/images/logoxtf.png'
+import sharesImage from 'public/images/shares.png'
 
 import { cn } from '@/utils/cn'
 
@@ -65,6 +66,8 @@ export const HomePageTitle: FC = () => {
           </a>
           .
         </p>
+
+        <Image src={sharesImage} priority width={800} alt="XTF-0 Logo" />
 
         <div className="my-14 h-[1px] w-[5rem] max-w-full bg-gray-800" />
       </div>

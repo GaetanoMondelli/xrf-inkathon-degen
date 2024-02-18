@@ -35,7 +35,8 @@ export const ETFInteraction: FC = () => {
 
   const [getVaultsNumber, setGetVaultsNumber] = useState<number>(0)
   const [getVaultsOfUser, setGetVaultsOfUser] = useState<number>(0)
-  const [inputVaultNumber, setInputVaultNumber] = useState<number>()
+  const [inputVaultNumber, setInputVaultNumber] = useState<number>(0)
+  const [closeInputVaultNumber, setCloseInputVaultNumber] = useState<number>(0)
 
   const [vaultOwnerQuery, setVaultOwnerQuery] = useState<number>(0)
   const [vaultOwnerQueryResult, setVaultOwnerQueryResult] = useState<string>()
@@ -123,6 +124,24 @@ export const ETFInteraction: FC = () => {
     // }
   }
 
+  const closeVaultAction = async () => {
+    if (!activeAccount || !contract || !activeSigner || !api) {
+      toast.error('Wallet not connected. Try again…')
+      return
+    }
+    console.log('openVault', inputVaultNumber)
+    try {
+      await contractTxWithToast(api, activeAccount.address, contract, 'closeVault', {}, [
+        closeInputVaultNumber,
+      ])
+      reset()
+    } catch (e) {
+      console.error(e)
+    } finally {
+      fetchToken()
+    }
+  }
+
   const openVaultAction = async () => {
     if (!activeAccount || !contract || !activeSigner || !api) {
       toast.error('Wallet not connected. Try again…')
@@ -189,12 +208,33 @@ export const ETFInteraction: FC = () => {
 
                       <Button
                         // type="submit"
-                        className="bg-primary font-bold"
+                        className="
+                        bg-green-500
+                        font-bold"
                         // disabled={}
                         // isLoading={form.formState.isSubmitting}
                         onClick={openVaultAction}
                       >
                         Open Vault {inputVaultNumber}
+                      </Button>
+                    </div>
+                  </FormControl>
+                  <br />
+                  <FormControl>
+                    <div className="flex gap-2">
+                      <Input
+                        defaultValue={0}
+                        onChange={(e) => setCloseInputVaultNumber(parseInt(e.target.value))}
+                      />
+
+                      <Button
+                        // type="submit"
+                        className="bg-red-500 font-bold"
+                        // disabled={}
+                        // isLoading={form.formState.isSubmitting}
+                        onClick={closeVaultAction}
+                      >
+                        Close Vault {closeInputVaultNumber}
                       </Button>
                     </div>
                   </FormControl>

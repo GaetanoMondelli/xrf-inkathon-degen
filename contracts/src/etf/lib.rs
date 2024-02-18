@@ -162,7 +162,10 @@ mod etf {
             let caller_balance = self.balances.get(caller).unwrap_or(0);
             self.balances.insert(caller, &(caller_balance + SHARES));
 
-            self.env().emit_event(VaultOpened { vault, owner: caller });
+            self.env().emit_event(VaultOpened {
+                vault,
+                owner: caller,
+            });
             Ok(vault)
         }
 
@@ -170,11 +173,6 @@ mod etf {
         pub fn close_vault(&mut self, vault: u8) -> Result<(), ContractError> {
             let caller = self.env().caller();
             let owner = self.vaults.get(&vault).unwrap();
-
-            // check the vault has an owner, we do not care who is the owner
-            if owner == &AccountId::default() {
-                return Err(ContractError::CloseVaultFailed);
-            }
 
             // check the caller has enough shares to close the vault and reedem the tokens
             let caller_shares_balance = self.balances.get(caller).unwrap_or(0);
